@@ -1,0 +1,12 @@
+services:
+  notes-api:
+    build: .
+    ports: ["8080:8080"]
+    environment:
+      LOG_LEVEL: INFO
+      APP_VERSION: local
+    volumes:
+      - notes-data:/data
+    restart: unless-stopped
+volumes:
+  notes-data:
