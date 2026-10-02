@@ -30,5 +30,5 @@ In this project, "staging" is the container started on the CI runner. It is a cl
 
 ## 6. What is not done
 - No hosted public URL: the app is not running on a live server.
-- The pipeline was written and pushed; whether its first run passes is checked after pushing (see the repository Actions tab).
+- The first pipeline run (commit af78141, run #1 of "task-5 build and publish") passed: the image built, the container started, the smoke test passed and the image was pushed to ghcr.io. The package is private by default on GitHub, so it is not publicly pullable until the owner changes its visibility.
 - No metrics dashboard or alerting; only logs and health checks.
