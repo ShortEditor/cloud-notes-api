@@ -1,0 +1,11 @@
+# cloud-notes-api
+
+Learning project for a Cloud Computing internship. One repository, one folder per internship task. Each folder is self-contained (own README, tests, Dockerfile).
+
+| Folder | Task | Content |
+|---|---|---|
+| [task-1](task-1) | Fundamentals and Setup | Flask Hello World API, tests, Dockerfile, CI |
+| [task-2](task-2) | Core Concepts and Skills | REST CRUD, env config, logging, concept notes |
+| [task-3](task-3) | Practical Implementation Project | Notes API with SQLite, validation, tests, technical guide |
+
+Run a task: `cd task-N && pip install -r requirements.txt -r requirements-dev.txt && python -m pytest -q`
