@@ -1,0 +1,12 @@
+# Render Blueprint (free plan). NOT deployed yet - needs the owner to connect Render to GitHub.
+services:
+  - type: web
+    name: cloud-notes-api
+    runtime: docker
+    dockerContext: task-5
+    dockerfilePath: task-5/Dockerfile
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: DB_PATH
+        value: /tmp/notes.db
